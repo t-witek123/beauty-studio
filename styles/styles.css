@@ -1,15 +1,11 @@
 /* COMMON */
 
 html, body {
+    overflow-x: hidden;
     margin: 0;
     padding: 0;
     font-family: 'Roboto', sans-serif;
     color: #2c3e50;
-}
-
-.container {
-    max-width: 1024px;
-    margin: 0px auto;
 }
 
 .cta-btn {
@@ -28,7 +24,6 @@ html, body {
     background-color: #6D214F;
 }
 
-
 /* END OF COMMON */
 
 /* NAVIGATION */
@@ -43,24 +38,52 @@ html, body {
 
 .nav__links {
     display: flex;
+    flex-wrap: wrap;
+    flex-basis: 100%;
     justify-content: center;
     margin: 0;
     list-style: none;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    padding-inline-start: 0;
+}
+
+.nav__links--active .nav__link {
+    display: flex;
 }
 
 .nav__link {
-    display: flex;
+    display: none;
+    flex-basis: 100%;
     justify-content: center;
     align-items: center;
     height: 50px;
     min-width: 150px;
+
     color: white;
     text-decoration: none;
     transition: 0.5s ease-in-out;
 }
 
+.nav__link-menu {
+    display: flex;
+}
+
 .nav__link:hover {
     background-color: #6D214F;
+}
+
+@media (min-width:768px) {
+    .nav__links {
+        flex-wrap: initial;
+        flex-basis: initial;
+    }
+    .nav__link {
+        display: flex;
+    }
+    .nav__links--active .nav__link-menu, .nav__link-menu {
+        display: none;
+    }
 }
 
 /* END OF NAVIGATION */
@@ -182,32 +205,33 @@ html, body {
     color: #6D214F;
 }
 
-.contact__container{
+.contact__container {
     display: flex;
 }
-.contact__text, .contact__form{
+
+.contact__text, .contact__form {
     flex-basis: 50%;
     padding: 0 2rem;
 }
 
-.contact__header{
+.contact__header {
     margin-top: 0;
 }
 
-.contact__adress--item{
+.contact__adress--item {
     width: 1rem;
     text-align: center;
     margin-right: 0.25rem;
 }
 
-.contact__rule{
+.contact__rule {
     min-width: 250px;
     width: 30%;
     margin: 0;
     border: 1px solid #bd45e9;
 }
 
-.contact-form__input{
+.contact-form__input {
     color: white;
     min-height: 2rem;
     border-radius: 4px;
@@ -220,7 +244,7 @@ html, body {
     width: 100%;
 }
 
-.contact-form__input::placeholder{
+.contact-form__input::placeholder {
     color: rgb(255, 255, 255, 0.5);
 }
 
@@ -238,32 +262,36 @@ html, body {
     transition: background-color 0.5s ease-in-out;
 }
 
-.contact-form__btn:hover{
+.contact-form__btn:hover {
     background-color: #6D214F;
 }
+
 /* END OF CONTACT */
 
 /* FOOTER */
-.footer{
+
+.footer {
     padding: 3rem;
     color: #6D214F;
     background-color: #cd57f8;
 }
-.footer__container{
+
+.footer__container {
     display: flex;
 }
 
-.footer__text, .footer__button{
+.footer__text, .footer__button {
     flex-basis: 50%;
     padding: 0 2rem;
 }
 
-.footer__header{
+.footer__header {
     margin-top: 0;
     font-size: 1.5rem;
 }
 
-.footer-btn{
+.footer-btn {
     width: 100%;
 }
+
 /* END OF FOOTER */

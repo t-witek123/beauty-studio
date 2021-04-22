@@ -17,6 +17,10 @@
     />
     <link
         rel="stylesheet"
+        href="./styles/grid.css"
+    >
+    <link
+        rel="stylesheet"
         href="./styles/styles.css"
     />
     <script
@@ -34,8 +38,16 @@
         class="nav"
         id="nav"
     >
-        <nav class="container">
-            <ul class="nav__links">
+        <nav class="container container--fixed">
+            <ul class="nav__links nav__links--active">
+                <a
+                    class="nav__link nav__link-menu"
+                    href="#"
+                >
+                    <li class="nav__link--item">
+                        <i class="fas fa-bars"></i>
+                    </li>
+                </a>
                 <a
                     class="nav__link"
                     href="./#hero"
@@ -85,11 +97,11 @@
         </section>
 
         <section
-            class="features container"
+            class="features container container--fixed"
             id="features"
         >
 
-            <div class="feature">
+            <div class="feature col xs-12 md-4">
                 <i class="feature__icon fas fa-spa"></i>
 
                 <h4 class="feature__header">Spa</h4>
@@ -100,7 +112,7 @@
                     id reprehenderit reiciendis ipsum.</p>
             </div>
 
-            <div class="feature">
+            <div class="feature col xs-12 md-4">
                 <i class="feature__icon far fa-smile"></i>
                 <h4 class="feature__header">Best quality</h4>
                 <p class="feature__message">Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo,
@@ -110,7 +122,7 @@
                     fuga quos cupiditate magni id?</p>
             </div>
 
-            <div class="feature">
+            <div class="feature col xs-12 md-4">
                 <i class="feature__icon fas fa-magic"></i>
 
                 <h4 class="feature__header">Makeup</h4>
@@ -127,9 +139,9 @@
             class="about "
             id="about"
         >
-            <div class="about__container container">
+            <div class="about__container container container--fixed">
 
-                <div class="about__text">
+                <div class="about__text col xs-12 md-6">
                     <h2 class="about__header">A heading describing your beauty studio and advantages</h2>
                     <p class="about__description">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum
                         blanditiis nulla ea voluptatibus
@@ -139,14 +151,14 @@
                         deserunt voluptatibus facere!</p>
                 </div>
 
-                <div class="about__image">
+                <div class="about__image col xs-12 md-6">
                     <div class="about__image-container"></div>
                 </div>
             </div>
         </section>
 
         <section
-            class="testimonials container"
+            class="testimonials container container--fixed"
             id="testimonials"
         >
 
@@ -179,8 +191,8 @@
             class="contact"
             id="contact"
         >
-            <div class="contact__container container">
-                <div class="contact__text">
+            <div class="contact__container container container--fixed">
+                <div class="contact__text col xs-12 md-6">
                     <h2 class="contact__header">Have a question?</h2>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur reiciendis molestiae
                         repellat
@@ -203,7 +215,7 @@
 
                 </div>
 
-                <div class="contact__form">
+                <div class="contact__form col xs-12 md-6">
                     <form class="contact-form">
                         <div>
                             <div>
@@ -250,11 +262,11 @@
         class="footer"
         id="footer"
     >
-        <div class="footer__container container">
-            <div class="footer__text">
+        <div class="footer__container container container--fixed">
+            <div class="footer__text col xs-12 md-6">
                 <h3 class="footer__header">Come to my beauty studio!</h3>
             </div>
-            <div class="footer__button">
+            <div class="footer__button col xs-12 md-6">
                 <button class="cta-btn footer-btn">Call me!</button>
             </div>
         </div>
