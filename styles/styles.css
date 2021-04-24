@@ -169,11 +169,6 @@ html, body {
     padding-top: 2rem;
 }
 
-.testimonial {
-    text-align: center;
-    flex-basis: 80%;
-}
-
 .testimonials__rule {
     margin: 2rem auto;
     width: 30%;
@@ -187,13 +182,6 @@ html, body {
     border-radius: 50%;
 }
 
-.testimonial-arrow {
-    flex-basis: 10%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 1.5rem;
-}
 
 /* END OF TESTIMONIALS */
 
